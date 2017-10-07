@@ -12,7 +12,7 @@ int main()
 	gameresult result;					//定义变量
 	enum gameresult omit = cancle;		//定义变量
 
-	for (int count = win; count <= cancle; count++) {
+	for (int count = win; count <= cancle; count++) {//这里WIN被隐含转换成了整型数
 		result = gameresult(count);
 		if (result == omit)
 			cout << "the game was canaelled" << endl;
